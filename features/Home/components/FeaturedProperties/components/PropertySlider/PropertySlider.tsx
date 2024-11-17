@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,6 +23,8 @@ const PropertySlider: React.FC<{ featuredProperties: Hit[] }> = ({
       autoplay={{ delay: 2000, disableOnInteraction: true }}
       pagination={{ dynamicBullets: true }}
       className="mySwiper"
+      navigation={true}
+      modules={[Navigation]}
     >
       {featuredProperties.map((hit) => (
         <SwiperSlide key={hit.id}>
