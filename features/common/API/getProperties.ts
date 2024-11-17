@@ -1,18 +1,14 @@
-import { axios } from '@/lib/axios';
+import { Convert, Properties } from "@/lib/properties";
+import fsPromises from "fs/promises";
+import path from "path";
 
-export const getProperties = async (num: number) => {
-  const { data } = await axios.get('/properties/list', {
-    params: {
-      locationExternalIDs: '5002,6020',
-      purpose: 'for-rent',
-      hitsPerPage: num,
-      page: '0',
-      lang: 'en',
-      sort: 'city-level-score',
-      hasVideo: true,
-      hasFloorPlan: true,
-      hasPanorama: true,
-    },
-  });
-  return data.hits;
-};
+export async function getProperties(): Promise<Properties> {
+  // Get the path of the json file
+  const filePath = path.join(process.cwd(), "./features/data/properties.json");
+  // Read the json file
+  const jsonData = await fsPromises.readFile(filePath);
+  // Parse data as json
+  const properties = Convert.toProperties(jsonData.toString());
+
+  return properties;
+}

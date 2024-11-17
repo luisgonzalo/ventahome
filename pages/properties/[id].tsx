@@ -1,6 +1,5 @@
-import React from 'react';
-import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
-import { usePropertyFormat } from '@/features/common/Hooks/usePropertyFormat';
+import React from "react";
+import { GetServerSideProps } from "next";
 import {
   Badge,
   Box,
@@ -9,19 +8,19 @@ import {
   GridItem,
   SimpleGrid,
   Text,
-} from '@chakra-ui/react';
-import DefaultLayout from '@/features/Layout/DefaultLayout';
-import { TbMapPin } from 'react-icons/tb';
-import PropertyThumbnailSlider from '@/features/Property/components/PropertyThumbnailSlider';
-import PropertyStats from '@/features/Property/components/PropertyStats';
-import TextContentBox from '@/features/common/modules/TextContentBox';
-import PropertyYoutubeEmbeded from '@/features/Property/components/PropertyYoutubeEmbeded';
-import PropertyMatterPortEmbed from '@/features/Property/components/PropertyMatterPortEmbed';
-import { getProperty } from '@/features/Property/API/getProperty';
+} from "@chakra-ui/react";
+import DefaultLayout from "@/features/Layout/DefaultLayout";
+import { TbMapPin } from "react-icons/tb";
+import PropertyThumbnailSlider from "@/features/Property/components/PropertyThumbnailSlider";
+import PropertyStats from "@/features/Property/components/PropertyStats";
+import TextContentBox from "@/features/common/modules/TextContentBox";
+import PropertyYoutubeEmbeded from "@/features/Property/components/PropertyYoutubeEmbeded";
+import PropertyMatterPortEmbed from "@/features/Property/components/PropertyMatterPortEmbed";
+import { getProperty } from "@/features/Property/API/getProperty";
+import { Property } from "@/lib/property";
+import { usePropertyFormat } from "@/features/common/Hooks/usePropertyFormat";
 
-const PropertyDetail = ({
-  property,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+const PropertyDetail = ({ property }: { property: Property }) => {
   const {
     address,
     propertyType,
@@ -46,7 +45,7 @@ const PropertyDetail = ({
       <Box
         backgroundColor="#f7f8f9"
         paddingY="3rem"
-        paddingX={{ base: '1rem', md: '3rem' }}
+        paddingX={{ base: "1rem", md: "3rem" }}
       >
         <Grid
           templateColumns="repeat(6, 1fr)"
@@ -59,7 +58,7 @@ const PropertyDetail = ({
               fontSize="3xl"
               fontWeight="medium"
               color="blue.800"
-              textAlign={{ base: 'center', md: 'left' }}
+              textAlign={{ base: "center", md: "left" }}
             >
               {propertyType} {title}
             </Text>
@@ -67,9 +66,9 @@ const PropertyDetail = ({
               fontSize="xl"
               color="blue.600"
               textAlign="center"
-              flexDirection={{ base: 'column', sm: 'row' }}
+              flexDirection={{ base: "column", sm: "row" }}
               gap="0.5rem"
-              marginY={{ base: '1rem', sm: '0' }}
+              marginY={{ base: "1rem", sm: "0" }}
             >
               <TbMapPin />
               <Text fontWeight="ligth">
@@ -80,7 +79,7 @@ const PropertyDetail = ({
                 padding="0.4rem"
                 width="fit-content"
                 height="fit-content"
-                marginX={{ base: 'auto', lg: '0' }}
+                marginX={{ base: "auto", lg: "0" }}
               >
                 {purpose}
               </Badge>
@@ -94,7 +93,7 @@ const PropertyDetail = ({
               rooms={rooms}
               baths={baths}
               price={price}
-              sqSize={sqSize}
+              sqSize={Number(sqSize)}
             />
             <TextContentBox title="description">
               <Text
@@ -117,7 +116,7 @@ const PropertyDetail = ({
                   ? amenities.map((item: string) => (
                       <Text key={item}>{item}</Text>
                     ))
-                  : 'Please contact us for more info'}
+                  : "Please contact us for more info"}
               </SimpleGrid>
             </TextContentBox>
           </GridItem>
@@ -128,7 +127,9 @@ const PropertyDetail = ({
           </GridItem>
           <GridItem colSpan={{ base: 6, sm: 3 }}>
             <TextContentBox title="3D Virtual Walkthrough">
-              <PropertyMatterPortEmbed panorama={panorama} />
+              {typeof panorama === "string" && (
+                <PropertyMatterPortEmbed panorama={panorama} />
+              )}
             </TextContentBox>
           </GridItem>
         </Grid>

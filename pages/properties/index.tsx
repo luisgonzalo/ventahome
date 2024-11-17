@@ -1,13 +1,12 @@
-import React from 'react';
-import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import DefaultLayout from '@/features/Layout/DefaultLayout';
-import { Box, SimpleGrid } from '@chakra-ui/react';
-import PropertyCard from '@/features/common/modules/PropertyCard';
-import { getProperties } from '@/features/common/API/getProperties';
+import React from "react";
+import { GetStaticProps, InferGetStaticPropsType } from "next";
+import DefaultLayout from "@/features/Layout/DefaultLayout";
+import { Box, SimpleGrid } from "@chakra-ui/react";
+import PropertyCard from "@/features/common/modules/PropertyCard";
+import { getProperties } from "@/features/common/API/getProperties";
+import { Hit, Properties as PropertiesResult } from "@/lib/properties";
 
-const Properties = ({
-  properties,
-}: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Properties = ({ properties }: { properties: PropertiesResult }) => {
   return (
     <DefaultLayout
       title="Properties"
@@ -17,10 +16,10 @@ const Properties = ({
         <Box maxWidth="1280px" margin="0 auto">
           <SimpleGrid
             columns={{ base: 1, sm: 3 }}
-            gap={{ base: '0', sm: '2rem' }}
+            gap={{ base: "0", sm: "2rem" }}
           >
-            {properties.map((property: Object, index: number) => (
-              <PropertyCard key={index} {...property} />
+            {properties.hits.map((hit, index) => (
+              <PropertyCard key={index} hit={hit} />
             ))}
           </SimpleGrid>
         </Box>
@@ -32,7 +31,7 @@ const Properties = ({
 export default Properties;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const properties = await getProperties(20);
+  const properties = await getProperties();
 
   return {
     props: {

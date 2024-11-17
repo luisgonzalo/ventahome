@@ -1,10 +1,11 @@
-import React from 'react';
-import { usePropertyFormat } from '@/features/common/Hooks/usePropertyFormat';
-import { Badge, Box, Flex, HStack, Text } from '@chakra-ui/react';
-import { TbBed, TbBath, TbRuler } from 'react-icons/tb';
-import Link from 'next/link';
+import React from "react";
+import { useHitFormat } from "@/features/common/Hooks/useHitFormat";
+import { Badge, Box, Flex, HStack, Text } from "@chakra-ui/react";
+import { TbBed, TbBath, TbRuler } from "react-icons/tb";
+import Link from "next/link";
+import { Hit } from "@/lib/properties";
 
-const PropertyCard = (property: Object) => {
+const PropertyCard = ({ hit }: { hit: Hit }) => {
   const {
     address,
     coverPhoto,
@@ -16,7 +17,7 @@ const PropertyCard = (property: Object) => {
     purpose,
     sqSize,
     externalID,
-  } = usePropertyFormat(property);
+  } = useHitFormat(hit);
 
   return (
     <Box marginBottom="4rem" backgroundColor="#fff">

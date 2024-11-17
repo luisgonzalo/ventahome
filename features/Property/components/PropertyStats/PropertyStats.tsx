@@ -1,11 +1,11 @@
-import { Box, Center, Divider, Flex, Text } from '@chakra-ui/react';
-import React from 'react';
-import { TbBath, TbBed, TbRuler } from 'react-icons/tb';
+import { Box, Center, Divider, Flex, Text } from "@chakra-ui/react";
+import React from "react";
+import { TbBath, TbBed, TbRuler } from "react-icons/tb";
 
 type Props = {
   rooms: number;
   baths: number;
-  price: number;
+  price: string;
   sqSize: number;
 };
 
@@ -18,7 +18,7 @@ const PropertyStats: React.FC<Props> = ({ rooms, baths, price, sqSize }) => {
       overflowX="hidden"
     >
       <Flex
-        flexDirection={{ base: 'column', md: 'row' }}
+        flexDirection={{ base: "column", md: "row" }}
         fontSize="xl"
         color="gray.500"
         fontWeight="light"

@@ -37,7 +37,8 @@
       "name_l2": "UAE",
       "slug": "/uae",
       "slug_l1": "/uae",
-      "slug_l2": "/uae"
+      "slug_l2": "/uae",
+      "type": "condo-building"
     },
     {
       "id": 2,
@@ -48,7 +49,8 @@
       "name_l2": "Dubai",
       "slug": "/dubai",
       "slug_l1": "/dubai",
-      "slug_l2": "/dubai"
+      "slug_l2": "/dubai",
+      "type": "manual"
     },
     {
       "id": 54,
@@ -86,9 +88,7 @@
       "slug": "residential",
       "slug_l1": "residential",
       "slug_l2": "residential",
-      "nameSingular": "Residential",
-      "nameSingular_l1": "\u0633\u0643\u0646\u064a",
-      "nameSingular_l2": "Residential"
+      "type": "property"
     },
     {
       "id": 2,
@@ -100,9 +100,7 @@
       "slug": "apartments",
       "slug_l1": "apartments",
       "slug_l2": "apartments",
-      "nameSingular": "Apartment",
-      "nameSingular_l1": "\u0634\u0642\u0629",
-      "nameSingular_l2": "Apartment"
+      "type": "neighbourhood"
     }
   ],
   "createdAt": 1671710699.0,
@@ -142,7 +140,8 @@
       "title": null,
       "orderIndex": 0,
       "nimaScore": 6.00798409433134,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179042/3e120c40662d4f02b49c220db8d60f6d"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179042/3e120c40662d4f02b49c220db8d60f6d",
+      "main": true
     },
     {
       "id": 319179043,
@@ -150,7 +149,8 @@
       "title": null,
       "orderIndex": 1,
       "nimaScore": 9.014940947052182,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179043/2119ad4d7cdc48b8a424107db96a5ebe"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179043/2119ad4d7cdc48b8a424107db96a5ebe",
+      "main": false
     },
     {
       "id": 319179044,
@@ -158,7 +158,8 @@
       "title": null,
       "orderIndex": 2,
       "nimaScore": 9.169081590371082,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179044/35a73c818ffe424b9a80aaedbbacf8f1"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179044/35a73c818ffe424b9a80aaedbbacf8f1",
+      "main": false
     },
     {
       "id": 319179045,
@@ -166,7 +167,8 @@
       "title": null,
       "orderIndex": 3,
       "nimaScore": 8.967611988721131,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179045/9badeb4d32ac4f63966d62e72579d351"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179045/9badeb4d32ac4f63966d62e72579d351",
+      "main": false
     },
     {
       "id": 319179046,
@@ -174,7 +176,8 @@
       "title": null,
       "orderIndex": 4,
       "nimaScore": 9.17049851259776,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179046/6a86347dc89245a6ae2bc925227f75fb"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179046/6a86347dc89245a6ae2bc925227f75fb",
+      "main": false
     },
     {
       "id": 319179047,
@@ -182,7 +185,8 @@
       "title": null,
       "orderIndex": 5,
       "nimaScore": 8.449460716587055,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179047/f5217cd2d87d4633ae971b981c517999"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179047/f5217cd2d87d4633ae971b981c517999",
+      "main": false
     },
     {
       "id": 319179048,
@@ -190,7 +194,8 @@
       "title": null,
       "orderIndex": 6,
       "nimaScore": 9.123388710926974,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179048/1cec8270337544d89a00c7044f917292"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179048/1cec8270337544d89a00c7044f917292",
+      "main": false
     },
     {
       "id": 319179049,
@@ -198,7 +203,8 @@
       "title": null,
       "orderIndex": 7,
       "nimaScore": 9.23117666060989,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179049/12c0399ec2864cd2b9c9a4fca8794ba0"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179049/12c0399ec2864cd2b9c9a4fca8794ba0",
+      "main": false
     },
     {
       "id": 327377461,
@@ -206,7 +212,8 @@
       "title": null,
       "orderIndex": 8,
       "nimaScore": 8.540574160498238,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/327377461/d41ff994bd1a4ed0b21b25ad74d4a93f"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/327377461/d41ff994bd1a4ed0b21b25ad74d4a93f",
+      "main": false
     },
     {
       "id": 319179051,
@@ -214,47 +221,8 @@
       "title": null,
       "orderIndex": 9,
       "nimaScore": 9.218975599841997,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179051/ede309abbb23407ea91a3d5e60587ae6"
-    },
-    {
-      "id": 327377463,
-      "externalID": "136029974",
-      "title": null,
-      "orderIndex": 10,
-      "nimaScore": 9.03914741008148,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/327377463/0e772a82d38947bcb11fd6c7b597cb4c"
-    },
-    {
-      "id": 319179053,
-      "externalID": "136029976",
-      "title": null,
-      "orderIndex": 11,
-      "nimaScore": 8.836267061157201,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179053/275a870e69e24c04a73f05f03ecb14be"
-    },
-    {
-      "id": 319179054,
-      "externalID": "136029980",
-      "title": null,
-      "orderIndex": 12,
-      "nimaScore": 8.30536788513291,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179054/9925c54b3a2e460aa9289a00cd8f93b9"
-    },
-    {
-      "id": 319179055,
-      "externalID": "136029983",
-      "title": null,
-      "orderIndex": 13,
-      "nimaScore": 6.000021585642517,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179055/d2f5de27a8ac4774bcd5a999a354c112"
-    },
-    {
-      "id": 319179056,
-      "externalID": "136029986",
-      "title": null,
-      "orderIndex": 14,
-      "nimaScore": 6.000021240713365,
-      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179056/f9313eac991d4c09b7d72c10f2922966"
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/319179051/ede309abbb23407ea91a3d5e60587ae6",
+      "main": false
     }
   ],
   "floorPlans": [],
@@ -477,7 +445,6 @@
     "mobile": "+971585099030",
     "phone": "+97145778078",
     "whatsapp": "971545695868",
-    "proxyMobile": "+971526769790",
     "phoneNumbers": ["+97145778078"],
     "mobileNumbers": ["+971585099030"]
   },
@@ -512,7 +479,6 @@
     "tier": 3,
     "roles": [],
     "active": true,
-    "createdAt": "2021-11-22T11:51:54.648754+00:00",
     "commercialNumber": null,
     "shortNumber": null
   },
@@ -533,10 +499,6 @@
   "randBoostScore_l1": 254,
   "randBoostScore_l2": 254,
   "furnishingStatus": "furnished",
-  "extraFields": {
-    "dldBuildingNK": "tabu+ejari-291678",
-    "dldPropertySK": "dld|mea|ae|tabu+ejari-291768"
-  },
   "type": "property",
   "cityLevelScore": 1,
   "indyScore": 414,
