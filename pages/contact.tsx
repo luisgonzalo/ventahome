@@ -1,8 +1,8 @@
-import ContactForm from '@/features/common/modules/ContactForm';
-import TextContentBox from '@/features/common/modules/TextContentBox';
-import DefaultLayout from '@/features/Layout/DefaultLayout';
-import { Box, Grid, GridItem, Text } from '@chakra-ui/react';
-import React from 'react';
+import ContactForm from "@/features/common/modules/ContactForm";
+import TextContentBox from "@/features/common/modules/TextContentBox";
+import DefaultLayout from "@/features/Layout/DefaultLayout";
+import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
+import React from "react";
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
       <Box
         backgroundColor="#f7f8f9"
         paddingY="3rem"
-        paddingX={{ base: '1rem', md: '3rem' }}
+        paddingX={{ base: "1rem", md: "3rem" }}
       >
         <Grid
           templateColumns="repeat(6, 1fr)"
@@ -22,28 +22,22 @@ const Contact = () => {
           margin="0 auto"
         >
           <GridItem colSpan={{ base: 6, md: 4 }}>
-            <TextContentBox title="Contact Us">
+            <TextContentBox title="Contacta con nosotros">
               <ContactForm />
             </TextContentBox>
           </GridItem>
           <GridItem colSpan={{ base: 6, md: 2 }}>
-            <TextContentBox title="For Inquiries Contact:">
+            <TextContentBox title="Dirección Postal:">
               <Text
                 fontWeight="light"
                 color="gray.600"
                 fontSize="1rem"
                 marginBottom="1rem"
               >
-                Linnet Cubin <br />
-                Public Relations Manager
+                Ignacio Francés <br />
+                Director VentaHome
                 <br />
-                774 NE 84th St Miami, FL 33879
-              </Text>
-              <Text fontWeight="light" color="gray.600" fontSize="1rem">
-                Abraham Lincoln <br />
-                Public Relations Manager
-                <br />
-                774 NE 84th St Miami, FL 33879
+                Avda Miguel Díaz Recio 24, Bajo. 29010 Málaga
               </Text>
             </TextContentBox>
           </GridItem>

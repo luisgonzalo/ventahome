@@ -1,13 +1,13 @@
-import React from 'react';
-import { Box, Fade, Text } from '@chakra-ui/react';
-import HeroForm from '@/features/Home/components/HeroForm';
+import React from "react";
+import { Box, Fade, Text } from "@chakra-ui/react";
+import HeroForm from "@/features/Home/components/HeroForm";
 
 const HeroBanner = () => {
   return (
     <Fade in>
       <Box
         position="relative"
-        minHeight={{ base: '110vh', sm: '60vh' }}
+        minHeight={{ base: "110vh", sm: "60vh" }}
         backgroundImage={`url('./hero/heroBg.jpeg')`}
         backgroundPosition="center"
         backgroundSize="cover"
@@ -23,9 +23,9 @@ const HeroBanner = () => {
         />
         <Box
           display="flex"
-          flexDirection={{ base: 'column', sm: 'row' }}
+          flexDirection={{ base: "column", sm: "row" }}
           alignItems="center"
-          justifyContent={{ base: 'flex-start', sm: 'space-between' }}
+          justifyContent={{ base: "flex-start", sm: "space-between" }}
           maxWidth="1280px"
           position="absolute"
           color="white"
@@ -37,22 +37,21 @@ const HeroBanner = () => {
           margin="0 auto"
           padding="2rem"
         >
-          <Box width={{ base: '100%', sm: '50%' }}>
+          <Box width={{ base: "100%", sm: "50%" }}>
             <Text
-              fontSize={{ base: '4xl', sm: '5xl' }}
+              fontSize={{ base: "4xl", sm: "5xl" }}
               lineHeight="shorter"
               marginBottom="1.5rem"
             >
-              Download our new property <strong>Buying Guide </strong> today ...
+              Consigue nuestra nueva <strong>Guía de Compra </strong>...
             </Text>
-            <Text fontSize={{ base: 'lg', sm: '2xl' }}>
-              A free PDF out best secrets for evaluating a property, calculating
-              profit and so much more.
+            <Text fontSize={{ base: "lg", sm: "2xl" }}>
+              Un PDF gratuito con las propiedades más interesantes
             </Text>
           </Box>
           <Box
-            width={{ base: '100%', sm: 'auto' }}
-            marginTop={{ base: '2rem', sm: '0' }}
+            width={{ base: "100%", sm: "auto" }}
+            marginTop={{ base: "2rem", sm: "0" }}
           >
             <HeroForm />
           </Box>

@@ -1,6 +1,6 @@
-import React from 'react';
-import PropertySlider from '@/features/Home/components/FeaturedProperties/components/PropertySlider';
-import { Box, Text } from '@chakra-ui/react';
+import React from "react";
+import PropertySlider from "@/features/Home/components/FeaturedProperties/components/PropertySlider";
+import { Box, Text } from "@chakra-ui/react";
 
 const FeaturedProperties: React.FC<{ featuredProperties: Array<any> }> = ({
   featuredProperties,
@@ -11,16 +11,16 @@ const FeaturedProperties: React.FC<{ featuredProperties: Array<any> }> = ({
         maxWidth="1280px"
         margin="0 auto"
         color="gray.600"
-        paddingY={{ base: '3rem', sm: '6rem' }}
+        paddingY={{ base: "3rem", sm: "6rem" }}
       >
         <Text
-          fontSize={{ base: '4xl', sm: '5xl' }}
+          fontSize={{ base: "4xl", sm: "5xl" }}
           lineHeight="shorter"
           fontWeight="light"
           paddingX="2rem"
           textAlign="center"
         >
-          Discover Our Featured Properties
+          Descubre nuestras principales propiedades
         </Text>
         <Text
           fontSize="2xl"
@@ -30,7 +30,7 @@ const FeaturedProperties: React.FC<{ featuredProperties: Array<any> }> = ({
           paddingX="2rem"
           textAlign="center"
         >
-          A selection of our best properties
+          Una selección de las más destacadas
         </Text>
         <PropertySlider featuredProperties={featuredProperties} />
       </Box>

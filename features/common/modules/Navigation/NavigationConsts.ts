@@ -1,5 +1,5 @@
-import { HiCube, HiNewspaper, HiPhoneArrowUpRight } from 'react-icons/hi2';
-import { IconType } from 'react-icons/lib';
+import { HiCube, HiNewspaper, HiPhoneArrowUpRight } from "react-icons/hi2";
+import { IconType } from "react-icons/lib";
 
 export type navigationLink = {
   title: string;
@@ -8,11 +8,11 @@ export type navigationLink = {
 };
 
 export const navigationLinks: Array<navigationLink> = [
-  { title: 'Properties', link: '/properties', icon: HiCube },
-  { title: 'Contact', link: '/contact', icon: HiNewspaper },
+  { title: "Propiedades", link: "/properties", icon: HiCube },
+  { title: "Contacto", link: "/contact", icon: HiNewspaper },
   {
-    title: '(800) 555 555',
-    link: 'tel:(800) 555 555',
+    title: "646 555 555",
+    link: "tel:646 555 555",
     icon: HiPhoneArrowUpRight,
   },
 ];

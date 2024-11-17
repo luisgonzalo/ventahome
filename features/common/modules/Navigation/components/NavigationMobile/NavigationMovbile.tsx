@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 import {
   Box,
   Flex,
@@ -9,10 +9,10 @@ import {
   MenuItem,
   MenuList,
   Text,
-} from '@chakra-ui/react';
-import { HiHomeModern } from 'react-icons/hi2';
-import { navigationLinks } from '@/features/common/modules/Navigation/NavigationConsts';
-import { HamburgerIcon } from '@chakra-ui/icons';
+} from "@chakra-ui/react";
+import { HiHomeModern } from "react-icons/hi2";
+import { navigationLinks } from "@/features/common/modules/Navigation/NavigationConsts";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 const NavigationMovbile = () => {
   return (
@@ -20,14 +20,14 @@ const NavigationMovbile = () => {
       color="blue.600"
       padding="2rem"
       backgroundColor="white"
-      display={{ base: 'block', md: 'none' }}
+      display={{ base: "block", md: "none" }}
     >
       <Flex alignItems="center" justifyContent="space-between">
         <Link href="/">
           <Box display="flex" gap="2" alignItems="center">
             <HiHomeModern size="30" />
             <Text fontSize="2xl" fontWeight="black">
-              CASAZ
+              VentaHome
             </Text>
           </Box>
         </Link>

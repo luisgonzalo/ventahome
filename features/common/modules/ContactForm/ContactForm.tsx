@@ -6,9 +6,9 @@ import {
   Input,
   Text,
   Textarea,
-} from '@chakra-ui/react';
-import React from 'react';
-import { useForm } from 'react-hook-form';
+} from "@chakra-ui/react";
+import React from "react";
+import { useForm } from "react-hook-form";
 
 type ContactFormType = {
   name: string;
@@ -40,28 +40,28 @@ const ContactForm = () => {
             marginTop="1.3rem"
             id="name"
             type="text"
-            placeholder="Name"
-            {...register('name', { required: true })}
+            placeholder="Nombre"
+            {...register("name", { required: true })}
           />
           <Input
             marginTop="1.3rem"
             id="phone"
-            type="email"
-            placeholder="Phone"
-            {...register('phone', { required: true })}
+            type="text"
+            placeholder="Teléfono"
+            {...register("phone", { required: true })}
           />
           <Input
             marginTop="1.3rem"
             id="email"
-            type="text"
+            type="email"
             placeholder="Email"
-            {...register('email', { required: true })}
+            {...register("email", { required: true })}
           />
           <Textarea
             marginTop="1.3rem"
             id="message"
-            placeholder="Message"
-            {...register('message', { required: true })}
+            placeholder="Mensaje"
+            {...register("message", { required: true })}
           />
           <Checkbox
             marginTop="1.3rem"
@@ -69,11 +69,11 @@ const ContactForm = () => {
             type="checkbox"
             width="100%"
             placeholder="GDPR"
-            {...register('gdpr', { required: true })}
+            {...register("gdpr", { required: true })}
           >
             <Text fontSize="0.8rem" color="gray.500">
-              I consent to having this website store my details for future
-              communication
+              Acepto que este sitio web almacene mis datos para futuras
+              comunicaciones
             </Text>
           </Checkbox>
           <Button
@@ -85,7 +85,7 @@ const ContactForm = () => {
             marginTop="4rem"
             marginLeft="auto"
           >
-            Send Message
+            Enviar Mensaje
           </Button>
         </FormControl>
       </form>

@@ -7,9 +7,9 @@ import {
   Input,
   Text,
   VStack,
-} from '@chakra-ui/react';
-import React from 'react';
-import { useForm } from 'react-hook-form';
+} from "@chakra-ui/react";
+import React from "react";
+import { useForm } from "react-hook-form";
 
 type HeroFormType = {
   name: string;
@@ -37,11 +37,9 @@ const HeroForm = () => {
         color="gray.700"
       >
         <Text fontSize="xl" fontWeight="bold">
-          Free PDF Guide
+          Guía de Compra Gratuita
         </Text>
-        <Text fontSize="lg">
-          Complete the form below to download your guide
-        </Text>
+        <Text fontSize="lg">Rellene el formulario y pulse Enviar</Text>
         <form onSubmit={handleSubmit(onSubmit)}>
           <FormControl>
             <VStack spacing={1} align="flex-start">
@@ -49,8 +47,8 @@ const HeroForm = () => {
                 marginTop="1.3rem"
                 id="name"
                 type="text"
-                placeholder="Name"
-                {...register('name', { required: true })}
+                placeholder="Nombre"
+                {...register("name", { required: true })}
               />
               {errors.name && (
                 <Text fontSize="xs" color="red.400">
@@ -59,16 +57,16 @@ const HeroForm = () => {
               )}
             </VStack>
             <Flex
-              gap={{ base: '0', sm: '1rem' }}
-              flexDirection={{ base: 'column-reverse', sm: 'row' }}
+              gap={{ base: "0", sm: "1rem" }}
+              flexDirection={{ base: "column-reverse", sm: "row" }}
             >
               <VStack spacing={1} align="flex-start">
                 <Input
                   marginTop="1.3rem"
                   id="email"
-                  type="text"
+                  type="email"
                   placeholder="Email"
-                  {...register('email', { required: true })}
+                  {...register("email", { required: true })}
                 />
                 {errors.email && (
                   <Text fontSize="xs" color="red.400">
@@ -81,8 +79,8 @@ const HeroForm = () => {
                   marginTop="1.3rem"
                   id="phone"
                   type="text"
-                  placeholder="Phone"
-                  {...register('phone', { required: true })}
+                  placeholder="Teléfono"
+                  {...register("phone", { required: true })}
                 />
                 {errors.phone && (
                   <Text fontSize="xs" color="red.400">
@@ -96,9 +94,9 @@ const HeroForm = () => {
               id="gdpr"
               type="checkbox"
               placeholder="GDPR"
-              {...register('gdpr', { required: true })}
+              {...register("gdpr", { required: true })}
             >
-              I consent to having this website store my submitted info
+              Acepto que usen mis datos para enviarme la guía
             </Checkbox>
           </FormControl>
           <Button
@@ -109,7 +107,7 @@ const HeroForm = () => {
             padding="2rem"
             marginTop="2rem"
           >
-            Download Now
+            Enviar
           </Button>
         </form>
       </Box>

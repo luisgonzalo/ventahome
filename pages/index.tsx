@@ -15,8 +15,8 @@ export default function Home({
 }) {
   return (
     <DefaultLayout
-      title="CASAZ"
-      description="Find your dream home with our real estate website. Browse through thousands of listings, connect with expert agents, and discover the perfect property for your lifestyle. Start your search today and make your homeownership dreams a reality."
+      title="VentaHome"
+      description="Encuentra el hogar de tus sueños"
     >
       <HeroBanner />
       <FeaturedProperties featuredProperties={featuredProperties} />

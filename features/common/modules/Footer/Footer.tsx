@@ -1,13 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
-import { HiHomeModern } from 'react-icons/hi2';
-import { Box, Flex, SimpleGrid, Text } from '@chakra-ui/react';
+import React from "react";
+import Link from "next/link";
+import { HiHomeModern } from "react-icons/hi2";
+import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import {
   services,
   about,
   ourOffices,
   workWithUs,
-} from '@/features/common/modules/Footer/FooterConst';
+} from "@/features/common/modules/Footer/FooterConst";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
         maxWidth="1280px"
         margin="0 auto"
         paddingY="3rem"
-        paddingX={{ base: '2rem' }}
+        paddingX={{ base: "2rem" }}
       >
         <SimpleGrid
           column="4"
@@ -25,25 +25,25 @@ const Footer = () => {
           minChildWidth="150px"
         >
           <Flex flexDirection="column">
-            <FooterHeader title="Services" />
+            <FooterHeader title="¿Quiénes somos?" />
             {services.map((item) => (
               <FooterLink key={item.name} link={item.link} name={item.name} />
             ))}
           </Flex>
           <Flex flexDirection="column">
-            <FooterHeader title="About" />
+            <FooterHeader title="¿Qué hacemos?" />
             {about.map((item) => (
               <FooterLink key={item.name} link={item.link} name={item.name} />
             ))}
           </Flex>
           <Flex flexDirection="column">
-            <FooterHeader title="Our Offices" />
+            <FooterHeader title="Oficinas" />
             {ourOffices.map((item) => (
               <FooterLink key={item.name} link={item.link} name={item.name} />
             ))}
           </Flex>
           <Flex flexDirection="column">
-            <FooterHeader title="Work With Us" />
+            <FooterHeader title="Trabajemos juntos" />
             {workWithUs.map((item) => (
               <FooterLink key={item.name} link={item.link} name={item.name} />
             ))}
@@ -59,14 +59,14 @@ const Footer = () => {
         flexDir="column"
         color="white"
       >
-        <Box display='flex' gap="2" alignItems='center'>
+        <Box display="flex" gap="2" alignItems="center">
           <HiHomeModern />
           <Text fontSize="lg" fontWeight="black">
-            CASAZ
+            VentaHome
           </Text>
         </Box>
         <Text marginTop="1rem" fontSize="xs" textAlign="center">
-          All rights reserved - Copyright CASAZ
+          Todos los derechos reservados
         </Text>
       </Box>
     </Box>

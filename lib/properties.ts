@@ -239,7 +239,7 @@ export enum ProductLabel {
 }
 
 export enum Purpose {
-  ForSale = "for-sale",
+  ForSale = "en venta",
 }
 
 export enum State {
@@ -755,7 +755,7 @@ const typeMap: any = {
   FurnishingStatus: ["furnished", "unfurnished"],
   HitProduct: ["hot", "superhot"],
   ProductLabel: ["default"],
-  Purpose: ["for-sale"],
+  Purpose: ["en venta", "se alquila"],
   State: ["active"],
   HitType: ["property"],
   Status: ["unverified", "verified"],
