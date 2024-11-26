@@ -1,5 +1,5 @@
-import { Box, Image, Text } from '@chakra-ui/react';
-import React from 'react';
+import { Box, Image, Text } from "@chakra-ui/react";
+import React from "react";
 
 const AgentCard = ({
   name,
@@ -21,7 +21,8 @@ const AgentCard = ({
       justifyContent="center"
       alignItems="center"
       textAlign="center"
-      marginBottom={{ base: '1rem', sm: '0' }}
+      marginBottom={{ base: "1rem", sm: "0" }}
+      minW={300}
     >
       <Image
         src={image}

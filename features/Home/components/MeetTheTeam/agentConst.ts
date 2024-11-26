@@ -1,30 +1,27 @@
 export const agents = [
   {
-    name: "Igancio Francés",
+    name: "Ignacio Francés",
     title: "Director",
-    image: "./agents/agent-3.jpeg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+    image: "./agents/ignacio.jpeg",
+    description: "Director y socio fundador de Ventahome",
   },
   {
     name: "Mar",
-    title: "Real estate agent",
+    title: "Socia fundadora",
     image: "./agents/agent-1.jpeg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+      "Agente comercial, conocida por su compromiso con la innovación",
   },
   {
     name: "Francisco Redondo",
-    title: "Experto en IA",
-    image: "./agents/agent-2.jpeg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+    title: "Socio fundador",
+    image: "./agents/francisco.jpeg",
+    description: "Abogado y experto en leyes de propiedad",
   },
   {
     name: "Luis Cañas",
-    title: "Último programador humano",
-    image: "./agents/agent-4.jpeg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+    title: "Socio fundador",
+    image: "./agents/luis.webp",
+    description: "Responsable técnico de la plataforma",
   },
 ];

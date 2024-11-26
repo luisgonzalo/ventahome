@@ -32,7 +32,7 @@ const PropertyStats: React.FC<Props> = ({ rooms, baths, price, sqSize }) => {
           alignItems="center"
           gap="0.3rem"
         >
-          <Text>BEDS</Text>
+          <Text>HABITACIONES</Text>
           <Flex alignItems="center" gap="0.5rem">
             <TbBed />
             {rooms}
@@ -53,7 +53,7 @@ const PropertyStats: React.FC<Props> = ({ rooms, baths, price, sqSize }) => {
           alignItems="center"
           gap="0.3rem"
         >
-          <Text>BATHS</Text>
+          <Text>BAÑOS</Text>
           <Flex alignItems="center" gap="0.5rem">
             <TbBath />
             {baths}
@@ -68,7 +68,7 @@ const PropertyStats: React.FC<Props> = ({ rooms, baths, price, sqSize }) => {
           alignItems="center"
           gap="0.3rem"
         >
-          <Text>SIZE</Text>
+          <Text>TAMAÑO</Text>
           <Flex alignItems="center" gap="0.5rem">
             <TbRuler />
             {sqSize}
@@ -84,7 +84,7 @@ const PropertyStats: React.FC<Props> = ({ rooms, baths, price, sqSize }) => {
           alignItems="center"
           gap="0.3rem"
         >
-          <Text>PRICE</Text>
+          <Text>PRECIO</Text>
           <Flex alignItems="center" gap="0.5rem">
             {price}
           </Flex>

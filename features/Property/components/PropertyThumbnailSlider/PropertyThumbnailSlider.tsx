@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Navigation, Thumbs } from 'swiper';
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation, Thumbs } from "swiper";
 
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-import { Divider } from '@chakra-ui/react';
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import { Divider } from "@chakra-ui/react";
 
 const PropertyThumbnailSlider = ({ photos }: { photos: string[] }) => {
   const [thumbsSwiper, setThumbsSlider] = useState<any>(null);
@@ -24,7 +24,11 @@ const PropertyThumbnailSlider = ({ photos }: { photos: string[] }) => {
       >
         {photos.map((photo: string) => (
           <SwiperSlide key={photo}>
-            <img src={photo} alt="" />
+            <img
+              src={photo}
+              alt=""
+              style={{ objectFit: "cover", height: 290, width: "100%" }}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -40,7 +44,11 @@ const PropertyThumbnailSlider = ({ photos }: { photos: string[] }) => {
       >
         {photos.map((photo: string) => (
           <SwiperSlide key={photo}>
-            <img src={photo} alt="" />
+            <img
+              src={photo}
+              alt=""
+              style={{ objectFit: "cover", height: 100, width: "100%" }}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

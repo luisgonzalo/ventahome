@@ -4,7 +4,10 @@ import path from "path";
 
 export const getProperty = async (id: string | string[]): Promise<Property> => {
   // Get the path of the json file
-  const filePath = path.join(process.cwd(), "./features/data/property.json");
+  const filePath = path.join(
+    process.cwd(),
+    `./features/data/${id}/property.json`
+  );
   // Read the json file
   const jsonData = await fsPromises.readFile(filePath);
   // Parse data as json

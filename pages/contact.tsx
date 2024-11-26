@@ -37,7 +37,7 @@ const Contact = () => {
                 Ignacio Francés <br />
                 Director VentaHome
                 <br />
-                Avda Miguel Díaz Recio 24, Bajo. 29010 Málaga
+                C/ Robinson Crusoe, 3, 29006 Málaga
               </Text>
             </TextContentBox>
           </GridItem>

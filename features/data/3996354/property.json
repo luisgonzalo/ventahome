@@ -1,0 +1,234 @@
+{
+  "id": 3996354,
+  "ownerID": 1897045,
+  "userExternalID": "1897045",
+  "sourceID": 1,
+  "state": "active",
+  "geography": {
+    "lat": 25.181663,
+    "lng": 55.278035
+  },
+  "purpose": "en venta",
+  "price": 137903,
+  "product": "hot",
+  "productLabel": "default",
+  "rentFrequency": null,
+  "referenceNumber": "2985-Ap-S-0279",
+  "permitNumber": "7129176800",
+  "projectNumber": null,
+  "title": "Piso en Avda Carlos III, Velez Málaga",
+  "title_l1": "\u0634\u0642\u0629 \u0641\u064a \u0628\u0631\u062c \u0645\u0627\u064a \u0641\u064a\u0631 \u0627\u0644\u062e\u0644\u064a\u062c \u0627\u0644\u062a\u062c\u0627\u0631\u064a 1 \u063a\u0631\u0641 800000 \u062f\u0631\u0647\u0645 - 6679108",
+  "title_l2": "Piso en Avda Carlos III, Velez Málaga",
+  "description": "Piso en bloque de viviendas, en planta tercera, superficie construida 78 m2 + trastero de 4 m2",
+  "description_l1": "\u0634\u0642\u0629 \u0641\u064a \u0628\u0631\u062c \u0645\u0627\u064a \u0641\u064a\u0631 \u0627\u0644\u062e\u0644\u064a\u062c \u0627\u0644\u062a\u062c\u0627\u0631\u064a 1 \u063a\u0631\u0641 800000 \u062f\u0631\u0647\u0645 - 6679108",
+  "description_l2": "-1 Bedroom\n-1 Bathroom\n-Open Kitchen\n-Built-in Wardrobes\n-Laundry Room\n-Balcony Canal View\n\nluxe homes is please to present you this 1-Bedroom Apartment in Business Bay, Mayfair Tower. A 22-storey residential building developed by Deyaar. \n\nMain Roads nearby: Al Khail Road, Sheikh Zayed Road\nClosest Metro Station: Business Bay\nClosest Bust Stations: Fairview Residency 2\n\nAmenities:\n-High-speed Elevators, CCTV and Fire-alarms\n-Security, and Maintenance Services\n-Gym, Pool and Spa\n-Children's Play Area\n\nFor further details, please drop us a message on WhatsApp - or peruse the extraordinary selection of properties we maintain on the luxe home website. Our area specialist will be happy to answer any of your questions related to the property listed. \n\nGet in touch with us on:\nCall: [redacted phone number]\nEmail: [redacted email address]\nWeb: www. luxehomesdubai. com",
+  "externalID": "3996354",
+  "slug": "1-bedroom-vacant-canal-view-6679108",
+  "slug_l1": "1-bedroom-vacant-canal-view-6679108",
+  "slug_l2": "1-bedroom-vacant-canal-view-6679108",
+  "location": [
+    {
+      "id": 1,
+      "level": 0,
+      "externalID": "5001",
+      "name": "Avda Carlos III, 20, Esp 1, Pl 3, Pta C, Velez-Málaga, Málaga",
+      "name_l1": "\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a",
+      "name_l2": "UAE",
+      "slug": "/uae",
+      "slug_l1": "/uae",
+      "slug_l2": "/uae",
+      "type": "condo-building"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "level": 0,
+      "externalID": "1",
+      "name": "Cesión",
+      "name_l1": "\u0633\u0643\u0646\u064a",
+      "name_l2": "Residential",
+      "slug": "residential",
+      "slug_l1": "residential",
+      "slug_l2": "residential",
+      "type": "property"
+    },
+    {
+      "id": 2,
+      "level": 1,
+      "externalID": "4",
+      "name": "de Remate",
+      "name_l1": "\u0634\u0642\u0642",
+      "name_l2": "Apartments",
+      "slug": "apartments",
+      "slug_l1": "apartments",
+      "slug_l2": "apartments",
+      "type": "neighbourhood"
+    }
+  ],
+  "createdAt": 1671710699.0,
+  "approvedAt": 1671710699.0,
+  "updatedAt": 1673581818.0,
+  "touchedAt": 1673582325.354743,
+  "reactivatedAt": 1671710699.0,
+  "rooms": 3,
+  "baths": 2,
+  "area": 78,
+  "score": 75,
+  "score_l1": 75,
+  "score_l2": 75,
+  "coverPhoto": {
+    "id": 319179042,
+    "externalID": "136029955",
+    "title": null,
+    "orderIndex": 0,
+    "nimaScore": 6.00798409433134,
+    "url": "/photos/3996354/01.png",
+    "main": true
+  },
+  "coverVideo": {
+    "externalID": 423182,
+    "title": null,
+    "host": "youtube",
+    "url": "",
+    "orderIndex": 0
+  },
+  "photoCount": 15,
+  "videoCount": 1,
+  "panoramaCount": 1,
+  "photos": [
+    {
+      "id": 319179042,
+      "externalID": "136029955",
+      "title": null,
+      "orderIndex": 0,
+      "nimaScore": 6.00798409433134,
+      "url": "/photos/3996354/01.png",
+      "main": true
+    },
+    {
+      "id": 319179043,
+      "externalID": "136029956",
+      "title": null,
+      "orderIndex": 1,
+      "nimaScore": 9.014940947052182,
+      "url": "/photos/3996354/02.png",
+      "main": false
+    },
+    {
+      "id": 319179044,
+      "externalID": "136029958",
+      "title": null,
+      "orderIndex": 2,
+      "nimaScore": 9.169081590371082,
+      "url": "/photos/3996354/03.png",
+      "main": false
+    }
+  ],
+  "floorPlans": [],
+  "floorPlan": {
+    "id": 263,
+    "typeIdentifier": "type",
+    "typeIdentifierValue": "N",
+    "images": [
+      {
+        "id": 14438,
+        "externalID": "b3dcd8fc",
+        "orderIndex": 11,
+        "image2D": {
+          "id": 73175246
+        },
+        "image3D": {
+          "id": 73175247
+        },
+        "label": "Floor 2-16"
+      }
+    ],
+    "models": [
+      {
+        "id": 6941,
+        "externalID": "bd3d233f33a345e389795bc885f569ec",
+        "orderIndex": null,
+        "placeholderImage": {
+          "id": 98909190
+        },
+        "label": null,
+        "modelURL": null
+      }
+    ]
+  },
+  "videos": [
+    {
+      "externalID": 423182,
+      "title": null,
+      "host": "youtube",
+      "url": "https://youtu.be/jFwDfJ6eze0",
+      "orderIndex": 0
+    }
+  ],
+  "panoramas": [],
+  "amenities": [],
+  "phoneNumber": {
+    "mobile": "+971585099030",
+    "phone": "+97145778078",
+    "whatsapp": "971545695868",
+    "phoneNumbers": ["+97145778078"],
+    "mobileNumbers": ["+971585099030"]
+  },
+  "contactName": "Mohammad Al Hareef",
+  "agency": {
+    "id": 29621364,
+    "name": "Luxehomes Real Estate Buying & Selling Brokerage",
+    "name_l1": "\u0627\u0644\u0648\u0633\u0627\u0637\u0629 \u0641\u064a \u0628\u064a\u0639 \u0648\u0634\u0631\u0627\u0621 \u0627\u0644\u0639\u0642\u0627\u0631\u0627\u062a \u0627\u0644\u0641\u0627\u062e\u0631\u0629",
+    "name_l2": "Luxehomes Real Estate Buying & Selling Brokerage",
+    "externalID": "11042",
+    "product": "premium",
+    "productScore": 2,
+    "licenses": [
+      {
+        "number": "996016",
+        "authority": "DED"
+      },
+      {
+        "number": "28403",
+        "authority": "RERA"
+      }
+    ],
+    "logo": {
+      "id": 168330538,
+      "url": "https://bayut-production.s3.eu-central-1.amazonaws.com/image/168330538/79f945f5f88f4628baa1d939c8bcca77"
+    },
+    "slug": "luxehomes-real-estate-buying-selling-brokerage-11042",
+    "slug_l1": "luxehomes-real-estate-buying-selling-brokerage-11042",
+    "slug_l2": "luxehomes-real-estate-buying-selling-brokerage-11042",
+    "tr": 3,
+    "tier": 3,
+    "roles": [],
+    "active": true,
+    "commercialNumber": null,
+    "shortNumber": null
+  },
+  "active": true,
+  "hasExactGeography": true,
+  "verification": {
+    "status": "verified",
+    "type": "manual",
+    "eligible": true,
+    "comment": null,
+    "updatedAt": 1671790117.824156
+  },
+  "isVerified": true,
+  "completionStatus": "completed",
+  "randBoostScore": 414,
+  "randBoostScore_l1": 254,
+  "randBoostScore_l2": 254,
+  "furnishingStatus": "furnished",
+  "type": "property",
+  "cityLevelScore": 1,
+  "indyScore": 414,
+  "indyScore_l1": 254,
+  "indyScore_l2": 254,
+  "hasMatchingFloorPlans": true,
+  "hidePrice": false,
+  "locationPurposeTier": 1
+}

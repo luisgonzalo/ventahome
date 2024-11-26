@@ -8,6 +8,7 @@
 // match the expected interface, even if the JSON is valid.
 
 export interface Property {
+  description: string;
   id: number;
   objectID: number;
   ownerID: number;
@@ -26,7 +27,6 @@ export interface Property {
   title: string;
   title_l1: string;
   title_l2: string;
-  description: string;
   description_l1: string;
   description_l2: string;
   externalID: string;
@@ -220,7 +220,6 @@ export interface Verification {
   comment: null;
   updatedAt: number;
   verifiedAt: number;
-  visitedAt: null;
 }
 
 // Converts JSON strings to/from your types
@@ -421,7 +420,6 @@ const typeMap: any = {
   Property: o(
     [
       { json: "id", js: "id", typ: 0 },
-      { json: "objectID", js: "objectID", typ: 0 },
       { json: "ownerID", js: "ownerID", typ: 0 },
       { json: "userExternalID", js: "userExternalID", typ: "" },
       { json: "sourceID", js: "sourceID", typ: 0 },
@@ -495,7 +493,6 @@ const typeMap: any = {
   Agency: o(
     [
       { json: "id", js: "id", typ: 0 },
-      { json: "objectID", js: "objectID", typ: 0 },
       { json: "name", js: "name", typ: "" },
       { json: "name_l1", js: "name_l1", typ: "" },
       { json: "name_l2", js: "name_l2", typ: "" },
@@ -648,8 +645,6 @@ const typeMap: any = {
       { json: "eligible", js: "eligible", typ: true },
       { json: "comment", js: "comment", typ: null },
       { json: "updatedAt", js: "updatedAt", typ: 3.14 },
-      { json: "verifiedAt", js: "verifiedAt", typ: 3.14 },
-      { json: "visitedAt", js: "visitedAt", typ: null },
     ],
     false
   ),

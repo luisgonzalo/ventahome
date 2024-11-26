@@ -60,7 +60,7 @@ const PropertyDetail = ({ property }: { property: Property }) => {
               color="blue.800"
               textAlign={{ base: "center", md: "left" }}
             >
-              {propertyType} {title}
+              {propertyType} | {title}
             </Text>
             <Flex
               fontSize="xl"
@@ -95,7 +95,7 @@ const PropertyDetail = ({ property }: { property: Property }) => {
               price={price}
               sqSize={Number(sqSize)}
             />
-            <TextContentBox title="description">
+            <TextContentBox title="Descripción">
               <Text
                 fontWeight="light"
                 color="gray.600"
@@ -105,7 +105,7 @@ const PropertyDetail = ({ property }: { property: Property }) => {
                 {description}
               </Text>
             </TextContentBox>
-            <TextContentBox title="Amenities">
+            <TextContentBox title="Equipamiento">
               <SimpleGrid
                 columns={{ base: 1, sm: 2 }}
                 fontWeight="light"
@@ -116,22 +116,24 @@ const PropertyDetail = ({ property }: { property: Property }) => {
                   ? amenities.map((item: string) => (
                       <Text key={item}>{item}</Text>
                     ))
-                  : "Please contact us for more info"}
+                  : "Por favor contacte con nosotros para más información"}
               </SimpleGrid>
             </TextContentBox>
           </GridItem>
-          <GridItem colSpan={{ base: 6, sm: 3 }}>
-            <TextContentBox title="Video Walkthrough">
-              <PropertyYoutubeEmbeded coverVideo={coverVideo} />
-            </TextContentBox>
-          </GridItem>
-          <GridItem colSpan={{ base: 6, sm: 3 }}>
-            <TextContentBox title="3D Virtual Walkthrough">
-              {typeof panorama === "string" && (
+          {coverVideo.length > 0 && (
+            <GridItem colSpan={{ base: 6, sm: 3 }}>
+              <TextContentBox title="Vídeo">
+                <PropertyYoutubeEmbeded coverVideo={coverVideo} />
+              </TextContentBox>
+            </GridItem>
+          )}
+          {typeof panorama === "string" && (
+            <GridItem colSpan={{ base: 6, sm: 3 }}>
+              <TextContentBox title="Paseo virtual 3D">
                 <PropertyMatterPortEmbed panorama={panorama} />
-              )}
-            </TextContentBox>
-          </GridItem>
+              </TextContentBox>
+            </GridItem>
+          )}
         </Grid>
       </Box>
     </DefaultLayout>

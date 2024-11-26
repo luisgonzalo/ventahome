@@ -1,23 +1,23 @@
 export const testimonials = [
   {
-    name: 'Yovonnda Bostick',
-    company: 'Realmix',
-    image: './testimonials/testimonial4.jpeg',
+    name: "Felix Monje",
+    company: "",
+    image: "./testimonials/testimonial4.jpeg",
     testimonial:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.',
+      "Auténticos profesionales, serios pero con alma, algo difícil de encontrar hoy en día",
   },
   {
-    name: 'Fina Scallon',
-    company: 'Kamba',
-    image: './testimonials/testimonial2.jpeg',
+    name: "Javier Sánchez",
+    company: "",
+    image: "./testimonials/testimonial2.jpeg",
     testimonial:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.',
+      "Recomendable 100 %. Buenos contactos en el extranjero, actuaron rápido y sin incomodar con muchas visitas",
   },
   {
-    name: 'Ron Schonfeld',
-    company: 'Tagopia',
-    image: './testimonials/testimonial3.jpeg',
+    name: "Rodrigo Ramos",
+    company: "",
+    image: "./testimonials/testimonial3.jpeg",
     testimonial:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.',
+      "Rápidos, un reportaje fotográfico fantástico, sin mil visitas , bien escogidas para no hacer interminable la venta de mi casa",
   },
 ];

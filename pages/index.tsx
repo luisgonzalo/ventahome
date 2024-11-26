@@ -21,7 +21,7 @@ export default function Home({
       <HeroBanner />
       <FeaturedProperties featuredProperties={featuredProperties} />
       <MeetTheTeam />
-      <Partners />
+      {/* <Partners /> */}
       <Testimonials />
     </DefaultLayout>
   );

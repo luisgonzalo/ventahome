@@ -73,12 +73,10 @@ export interface Hit {
   keywords: string[];
   isVerified: boolean;
   verification: Verification;
-  verifiedScore: number;
   completionStatus: CompletionStatus;
   randBoostScore: number;
   randBoostScore_l1: number;
   randBoostScore_l2: number;
-  floorPlanID: number;
   furnishingStatus: FurnishingStatus | null;
   type: HitType;
   ownerAgent: OwnerAgent;
@@ -254,7 +252,6 @@ export interface Verification {
   updatedAt: number;
   eligible: boolean;
   status: Status;
-  verifiedAt: number | null;
 }
 
 export enum Status {
@@ -321,8 +318,6 @@ function prettyTypeName(typ: any): string {
         })
         .join(", ")}]`;
     }
-  } else if (typeof typ === "object" && typ.literal !== undefined) {
-    return typ.literal;
   } else {
     return typeof typ;
   }
@@ -552,7 +547,6 @@ const typeMap: any = {
       { json: "keywords", js: "keywords", typ: a("") },
       { json: "isVerified", js: "isVerified", typ: true },
       { json: "verification", js: "verification", typ: r("Verification") },
-      { json: "verifiedScore", js: "verifiedScore", typ: 0 },
       {
         json: "completionStatus",
         js: "completionStatus",
@@ -561,28 +555,19 @@ const typeMap: any = {
       { json: "randBoostScore", js: "randBoostScore", typ: 0 },
       { json: "randBoostScore_l1", js: "randBoostScore_l1", typ: 0 },
       { json: "randBoostScore_l2", js: "randBoostScore_l2", typ: 0 },
-      { json: "floorPlanID", js: "floorPlanID", typ: 0 },
       {
         json: "furnishingStatus",
         js: "furnishingStatus",
         typ: u(r("FurnishingStatus"), null),
       },
       { json: "type", js: "type", typ: r("HitType") },
-      { json: "ownerAgent", js: "ownerAgent", typ: r("OwnerAgent") },
       { json: "cityLevelScore", js: "cityLevelScore", typ: 0 },
       { json: "indyScore", js: "indyScore", typ: 0 },
       { json: "indyScore_l1", js: "indyScore_l1", typ: 0 },
       { json: "indyScore_l2", js: "indyScore_l2", typ: 0 },
       { json: "hasMatchingFloorPlans", js: "hasMatchingFloorPlans", typ: true },
-      { json: "photoIDs", js: "photoIDs", typ: a(0) },
       { json: "hidePrice", js: "hidePrice", typ: true },
       { json: "locationPurposeTier", js: "locationPurposeTier", typ: 0 },
-      { json: "objectID", js: "objectID", typ: "" },
-      {
-        json: "_highlightResult",
-        js: "_highlightResult",
-        typ: r("HighlightResult"),
-      },
     ],
     false
   ),
@@ -618,7 +603,6 @@ const typeMap: any = {
   HitAgency: o(
     [
       { json: "id", js: "id", typ: 0 },
-      { json: "objectID", js: "objectID", typ: 0 },
       { json: "name", js: "name", typ: "" },
       { json: "name_l1", js: "name_l1", typ: "" },
       { json: "name_l2", js: "name_l2", typ: "" },
@@ -664,7 +648,6 @@ const typeMap: any = {
       { json: "slug", js: "slug", typ: "" },
       { json: "slug_l1", js: "slug_l1", typ: "" },
       { json: "slug_l2", js: "slug_l2", typ: "" },
-      { json: "type", js: "type", typ: u(undefined, r("CategoryType")) },
     ],
     false
   ),
@@ -717,7 +700,6 @@ const typeMap: any = {
       { json: "updatedAt", js: "updatedAt", typ: 3.14 },
       { json: "eligible", js: "eligible", typ: true },
       { json: "status", js: "status", typ: r("Status") },
-      { json: "verifiedAt", js: "verifiedAt", typ: u(3.14, null) },
     ],
     false
   ),
